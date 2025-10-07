@@ -150,6 +150,12 @@ docker compose exec php php spark make:seeder UserzSeeder
 
 If you prefer, you can include `-f "compose.yaml"` explicitly; the shorter commands above work when running from the repo root.
 
+Note about ports:
+
+- The MySQL server is mapped to host port `3390`. This is a MySQL/TCP service — do not open `http://localhost:3390` in a browser (that will send HTTP to MySQL and can produce errors like "Got packets out of order").
+- App (nginx) is available on `http://localhost:8090/`.
+- phpMyAdmin is available on `http://localhost:8091/` (profile `tools`).
+
 ## Ports & Database
 
 Defaults used in this project (host mapping):

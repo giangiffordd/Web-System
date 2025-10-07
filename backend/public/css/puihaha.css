@@ -1,0 +1,26 @@
+/* Puihaha pastel theme styles */
+:root{
+  --bg: #fffaf0;
+  --muted: #6b7280;
+  --accent: #f472b6;
+  --card: #ffffff;
+}
+body{
+  background: var(--bg);
+}
+.brand{ font-family: 'Playfair Display', serif; color: var(--accent); letter-spacing: -0.02em; }
+.pastel{ color: var(--muted); }
+header .nav-link{ color: var(--muted); }
+header .nav-link:hover{ color: var(--accent); }
+.card{ background: var(--card); box-shadow: 0 6px 18px rgba(99,102,241,0.04); }
+
+/* small responsive tweaks */
+@media (max-width: 640px){
+  .brand{ font-size: 1.45rem; }
+}
+
+/* form focus */
+input:focus, textarea:focus{ outline: none; box-shadow: 0 0 0 3px rgba(244,114,182,0.12); border-color: rgba(244,114,182,0.8); }
+
+/* small helper */
+.text-muted{ color: var(--muted); }

@@ -10,6 +10,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call('App\\Database\\Seeds\\ClearDatabaseSeeder');
 
-        // $this->call('App\\Database\\Seeds\\<name of the seeder here>');
+        // Call the Puihaha site seeder
+        $this->call('App\\Database\\Seeds\\PuihahaSeeder');
     }
 }
